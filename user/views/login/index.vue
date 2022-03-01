@@ -34,7 +34,9 @@
       ></el-input>
     </el-form-item>
     <el-form-item class="login_submit">
-      <el-button type="primary" @click="login" class="login_submit">登录</el-button>
+      <el-button type="primary" @click="login" class="login_submit" style="margin-right: 10px">登录</el-button>
+      <el-button type="danger" @click="register" class="register_submit" style="margin-right: 10px">注册</el-button>
+      <el-link type="info" @click="forget" :underline="false" style="display: flex;justify-content: center; align-items: center">忘记密码？</el-link>
     </el-form-item>
   </el-form>
 </template>
@@ -94,6 +96,18 @@ export default {
       // const token=Mock.random.guid()
       // this.$store.commit('setToken',token)
       // this.$router.push({name: 'home'})
+    },
+
+    register(){
+      console.log("进入注册界面")
+      //无法进入，原因在于main.js中的判断
+      // this.$router.push({name: '/register'})
+    },
+
+    forget(){
+      console.log("进入忘记密码界面")
+      //无法进入，原因在于main.js中的判断
+      // this.$router.push({name: '/forget'})
     },
   }
 }

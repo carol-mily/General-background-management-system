@@ -1,15 +1,15 @@
 <template>
   <!--container布局-->
-  <el-container>
-    <el-header>
-      <common-header></common-header>
-    </el-header>
-    <common-tag/>
+  <el-container style="height:100%">
+    <el-aside style=" width:200px; background-color: #59827e">
+      <!--抽成组件-->
+      <common-aside></common-aside>
+    </el-aside>
     <el-container style="height:100%">
-      <el-aside style="height:100vh; width:200px; background-color: #59827e">
-        <!--抽成组件-->
-        <common-aside></common-aside>
-      </el-aside>
+      <el-header>
+        <common-header></common-header>
+      </el-header>
+      <common-tag/>
       <el-main>
         <!--展示嵌套路由的组件-->
         <router-view></router-view>

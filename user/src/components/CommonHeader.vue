@@ -1,7 +1,6 @@
 <template>
   <header>
     <div class="l-content">
-      <p>数据标准管理系统</p>
       <!--面包屑，动态注入数据-->
       <el-breadcrumb separator="/">
         <el-breadcrumb-item v-for="item in tags" :key="item.path" :to="{path: item.path }">{{ item.label }}</el-breadcrumb-item>

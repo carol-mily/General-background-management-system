@@ -8,6 +8,8 @@ import Main from "../views/Main"
 // import Page1 from "../views/others/pageOne"
 // import Page2 from "../views/others/pageTwo"
 import Login from "../views/login/index"
+import Register from "../views/register/index"
+import Forget from "../views/forget/index"
 
 //整体引入VueRouter
 Vue.use(VueRouter)
@@ -56,6 +58,16 @@ const routes =[
         path:'/login',
         name:'/login',
         component: Login
+    },
+    {
+        path:'/register',
+        name:'/register',
+        component: Register
+    },
+    {
+        path:'/forget',
+        name:'/forget',
+        component: Forget
     }
 ]
 

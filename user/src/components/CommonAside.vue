@@ -8,6 +8,7 @@
         background-color="#59827e"
         text-color="#fff"
         active-text-color="#ffce4e">
+      <h3>通用后台管理系统</h3>
       <!--循环读取无子菜单的item-->
       <el-menu-item @click="clickMenu(item)" v-for="item in noChildren" :index="item.path" :key="item.path">
         <i :class="'el-icon-'+item.icon"></i>
@@ -119,6 +120,11 @@ export default {
 .el-menu{
   height: 100%;
   border: none;
+  h3{
+    color: #ffffff;
+    text-align: center;
+    line-height: 48px;
+  }
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
